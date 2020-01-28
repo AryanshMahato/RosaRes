@@ -1,0 +1,10 @@
+.mainHeader {
+  height: 80px;
+  width: 100%;
+  background: #3498db;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+}
