@@ -1,32 +1,24 @@
 import React from "react";
 import styles from "./Backdrop.module.css";
 
-class Backdrop extends React.Component {
-  state = {
-    show: true
-  };
+const Backdrop = props => {
+  // Props Required:
+  //   show: boolean,
+  //   backdropClicked: function -> Executes on backdrop Clicked
 
-  backdropClicked = () => {
-    this.setState(prevState => {
-      return { show: !prevState.show };
-    });
-  };
-
-  classes=()=>{
-    if (this.state.show){
-      return styles.backdrop;
+  const classes = () => {
+    if (props.show) {
+      return styles.show;
     }
-    return styles.hide
+    return null;
   };
 
-  render() {
-    return (
-      <div
-        className={this.classes()}
-        onClick={this.backdropClicked}
-      />
-    );
-  }
-}
+  return (
+    <div
+      className={styles.backdrop + " " + classes()}
+      onClick={props.backdropClicked}
+    />
+  );
+};
 
 export default Backdrop;
