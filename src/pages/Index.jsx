@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../HOC/Layout";
-import Backdrop from "../Containers/Backdrop/Backdrop";
 
 class Index extends React.Component {
   state = {

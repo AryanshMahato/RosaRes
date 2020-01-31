@@ -1,4 +1,13 @@
 .navLinks {
   display: flex;
   align-items: center;
+  flex-flow: column;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .navLinks {
+    flex-flow: row;
+    color: white;
+  }
 }
