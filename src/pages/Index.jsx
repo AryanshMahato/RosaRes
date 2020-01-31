@@ -19,10 +19,6 @@ class Index extends React.Component {
     return (
       <Layout>
         <h1>Index Content</h1>
-        <Backdrop
-          show={this.state.showBackdrop}
-          backdropClicked={this.backdropClicked}
-        />
       </Layout>
     );
   }
