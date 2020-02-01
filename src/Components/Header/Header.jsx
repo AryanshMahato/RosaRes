@@ -1,13 +1,17 @@
 import React from "react";
-import classes from "./Header.module.css";
-import NavLinks from "./NavLinks/NavLinks";
+
+import classes from "./Header.module.scss";
+
 import Logo from "./Logo/Logo";
+import MobileNav from "./MobileNav/MobileNav";
+import DesktopNav from "./DesktopNav/DesktopNav";
 
 const Header = () => {
   return (
     <div className={classes.mainHeader}>
+      <MobileNav />
       <Logo />
-      <NavLinks />
+      <DesktopNav />
     </div>
   );
 };
