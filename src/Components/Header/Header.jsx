@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./Header.module.css";
+import classes from "./Header.module.scss";
 
 import Logo from "./Logo/Logo";
 import MobileNav from "./MobileNav/MobileNav";

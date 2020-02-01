@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./NavLink.module.css";
+import styles from "./NavLink.module.scss";
 
 const NavLink = props => {
   if (props.cta) {

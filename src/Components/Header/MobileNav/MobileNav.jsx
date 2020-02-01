@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./MobileNav.module.css";
+import styles from "./MobileNav.module.scss";
 import NavLinks from "../NavLinks/NavLinks";
 
 const MobileNav = () => {
